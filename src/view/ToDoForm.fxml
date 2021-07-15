@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="477.0" prefWidth="754.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ToDoFormController">
+   <children>
+      <ListView fx:id="lstToDos" layoutX="14.0" layoutY="14.0" prefHeight="450.0" prefWidth="337.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></ListView>
+      <Button fx:id="btnUpdate" layoutX="618.0" layoutY="113.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="26.0" prefWidth="104.0" style="-fx-background-color: #009933;" text="Update" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="507.0" layoutY="113.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="26.0" prefWidth="104.0" style="-fx-background-color: #cc0000;" text="Delete" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Separator layoutX="361.0" layoutY="156.0" prefHeight="26.0" prefWidth="384.0" />
+      <Button layoutX="367.0" layoutY="182.0" mnemonicParsing="false" onAction="#btnAddNewToDoOnAction" prefHeight="35.0" prefWidth="145.0" style="-fx-background-color: #003399;" text="+ Add New ToDo" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Pane fx:id="paneAddNewToDo" layoutX="367.0" layoutY="239.0" prefHeight="129.0" prefWidth="372.0" style="-fx-border-color: #000000;">
+         <children>
+            <TextField fx:id="txtNewToDo" layoutX="21.0" layoutY="29.0" prefHeight="28.0" prefWidth="337.0" />
+            <Button layoutX="248.0" layoutY="69.0" mnemonicParsing="false" onAction="#btnAddToListOnAction" prefHeight="26.0" prefWidth="104.0" style="-fx-background-color: #009933;" text="Add To List" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <TextField fx:id="txtUpdateToDo" layoutX="385.0" layoutY="75.0" prefHeight="28.0" prefWidth="337.0" />
+      <Button layoutX="356.0" layoutY="437.0" mnemonicParsing="false" onAction="#btnLogOutOnAction" prefHeight="26.0" prefWidth="104.0" style="-fx-background-color: #009933;" text="&lt;&lt; Log out" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lblTitle" layoutX="354.0" prefHeight="18.0" prefWidth="184.0" text="Hi Kamal Welcome to To-Do List">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblID" layoutX="704.0" layoutY="2.0" prefHeight="16.0" prefWidth="49.0" text="U001">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="463.0" prefHeight="18.0" prefWidth="107.0" text="Designed By : Kuppiya #2">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="91.0" fitWidth="145.0" layoutX="606.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/HAY_Festival_Horizontal_RGB_POS.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
